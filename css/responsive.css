@@ -1,0 +1,171 @@
+@media (max-width: 1000px){
+    .abouttext{
+        padding: 0;
+    }
+    .abouttext p {
+        font-size: 1.4rem;
+        line-height: 3rem;
+        padding: 0rem;
+    }
+}
+@media (max-width: 767px) {
+    
+    body{
+        background-color: rgb(0, 0, 0);
+    }
+  .display {
+    flex-direction: column;
+    /* display: block; */
+  }
+  .navbar{
+      background: black;
+  }
+  .abouttext{
+      padding: 2rem;
+
+  }
+  .heading{
+      font-size: 2.5rem;
+      padding-bottom: 0;
+  }
+  .skillimg img{
+      
+      width: 50%;
+  }
+  .skill{
+      padding: 1rem;
+      margin: 0 6rem;
+  }
+  .contact-clean {
+      padding: .5rem 0;
+      width: 100%;
+  }
+
+  .contact-clean form {
+    padding:0  2rem;
+    margin: 0 auto;
+}
+.contact-clean form .btn {
+    padding: 11px 22px;
+}
+.asideright{
+    margin-top: 0rem;
+     display: block;
+ }
+ .social{
+    /* background-color: black; */
+    padding: 0rem 0rem;
+}
+.social a{
+    color:rgba(255, 0, 0, 0.74);
+    font-size:20px;
+
+}
+.botobo{
+    margin:.5rem;
+    margin-top: 0rem;
+    /* width: 10%; */
+       border-top: 0px solid rgba(255, 0, 0, 0.705);
+       border-bottom: 0px solid rgba(255, 0, 0, 0.705);
+   }
+   .myname{
+    /* color: #ff1515; */
+    font-size: 3rem;
+    font-weight: 500;
+}
+.carousel-item{
+    /* align-items: center;
+    justify-content: center; */
+    /* padding: 0rem; */
+    margin-top: 2rem;
+    width: 100%;
+}
+.head{
+    margin-top: 3rem;
+}
+.myimg{
+    
+    margin: 3rem auto;
+    margin-top: 8rem;
+    /* padding: 1rem; */
+    height: 50%;
+    width:  60%;
+    filter: drop-shadow(3px 3px 3px rgb(165, 165, 165));
+}
+.img {
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    width: 50%;
+    height: auto;
+}
+.img img {
+    border-radius: 10px;
+    
+  }
+
+   .progresses {
+    width: 70%;
+    padding: 0rem;
+    /* margin-left: 5rem; */
+    margin: 0 auto;
+  }
+  .abouttext {
+    
+    /* font-size: 1.3rem; */
+  margin: 0 auto;
+    padding: 0rem;
+  }
+  .abouttext p,.skilltext p {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-family: Poppins;
+    line-height: 3rem;
+    padding:1.2rem 2.7rem;
+  }
+.contacttext{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-family: Poppins;
+    line-height: 3rem;
+    padding:1.2rem 2.2rem;
+}
+.statictxt {
+    /* color: rgb(14 14 14); */
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.ico span,
+.ico a {
+  
+  font-size: 1.2rem;
+  
+}
+.address span,
+.email span,
+.phone span {
+  margin: 1.5rem;
+  /* color: #ff1515; */
+}
+.foot div h2 {
+    font-size: 1.1rem;
+  }
+
+  .header::before {
+    content: "";
+    background: none;
+    
+    position: absolute;
+    /* opacity: 0.6; */
+    top: 0;
+    left: 0;
+    /* width: 100vw; */
+    height: 100vh;
+    filter: blur(0px);
+    z-index: -1;
+  }
+
+  
+}
