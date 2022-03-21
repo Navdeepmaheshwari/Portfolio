@@ -7,7 +7,7 @@
   background-color: rgb(0, 0, 0);
 }
 .navbar-toggler {
-  /* display: none; */
+  display: none;
 }
 .nav-item {
   padding: 0.5rem;
@@ -26,7 +26,7 @@
   color: rgb(255, 0, 0);
 }
 .navbar-brand {
- 
+ font-weight: 650;
   font-size: 3.5rem;
   color: #ff0000e1;
    /* font-family: Poppins, sans-serif; */
@@ -38,7 +38,10 @@
   
   color: #ff0000;
 }
-
+.scroll{
+  background: rgba(34, 34, 34);
+  transition: all 0.5s ease-in;
+}
 .header {
   font-size: 2rem;
   font-family: Poppins;
@@ -59,7 +62,7 @@
   z-index: -1;
 }
 .myimg {
-  margin: 2rem auto;
+  margin: 5rem auto;
   margin-top: 8rem;
   /* padding: 1rem; */
   height: 50%;
@@ -251,9 +254,9 @@ li {
   background: #000000;
   /* background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%); */
   border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  /* box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be; */
   letter-spacing: 0.05em;
-  border-radius: 20em;
+  border-radius: 2em;
 }
 
 .cssbuttons-io-button svg {
@@ -261,12 +264,15 @@ li {
 }
 
 .cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
-  background: linear-gradient(0deg, rgba(231, 65, 65, 0.795) 0%, rgba(30, 30, 32, 0.877) 100%);
+  box-shadow: 0 0.5em 1.5em -0.5em #c0c0c0be;
+  transform: translateY(-5px );
+  background: linear-gradient(30deg, rgba(177, 59, 59, 0.795) 0%, rgba(30, 30, 32, 0.877) 100%);
+  border: 1px solid rgb(167, 167, 167);
 }
 
+
 .cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+  /* box-shadow: 0 0.3em 1em -0.5em #4d36d0be; */
 }
 .resbtn{
   margin: 1.7rem;
@@ -340,6 +346,224 @@ width: 80%;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
+
+/* education experience */
+#education{
+  display: block;
+  /* font-size: 10rem; */
+}
+#experience{
+  display: none;
+  /* font-size: 10rem; */
+}
+/* From cssbuttons.io by @adamgiebl */
+.educationBtn, .experienceBtn {
+  /* letter-spacing: 1px; */
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7rem 1.4rem;
+  font-size: 2rem;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  /* font-family: Poppins, sans-serif; */
+  /* font-family: "Audiowide", sans-serif; */
+  font-family: "Orbitron", sans-serif;
+  /* font-family: 'Zen Tokyo Zoo', cursive; */
+  font-weight: 500;
+ }
+ 
+ .educationBtn span,  .experienceBtn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 2px solid rgba(65, 105, 225, 0.795);
+ }
+ 
+ .educationBtn span::before , .experienceBtn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+ }
+ 
+ .educationBtn:hover span::before , .experienceBtn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+ }
+ 
+ .educationBtn:hover, .experienceBtn:hover {
+  color: white;
+ }
+ 
+ /* .educationBtn:active span::before, .experienceBtn:active span::before {
+  background: #eb1e1e;
+ } */
+ .selected{
+   /* text-transform: uppercase; */
+   color: rgb(206, 206, 206);
+   background: rgba(65, 105, 225, 0.795);
+   /* font-weight: 200; */
+ }
+
+
+/* timeline */
+/* body{margin-top:20px;} */
+ .card{
+   /* margin: 0 auto; */
+   color: white;
+   margin-top: 3rem;
+  background-color: black;
+  
+}
+.timeline {
+    border-left: 3px solid rgba(65, 105, 225, 0.795);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(172, 172, 172, 0.134);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 55%;
+    
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline p {
+  line-height: 2.3rem;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #5543ca;
+  background: #5543ca;
+  background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+  background: -webkit-linear-gradient(
+    left,
+    #f4524d 0%,
+    #5543ca 100%
+  ) !important;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.timeline h2,
+.timeline h3 {
+  /* line-height: 0px; */
+    /* font-weight: 600; */
+    color: rgb(163, 163, 163);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+  font-size: 1.5rem;
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.8rem;
+    min-width: 120px;
+    color: rgb(197, 197, 197);
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.795);
+    box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.795);
+    left: -55.8px;
+    /* background: #fff; */
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid rgba(65, 105, 225, 0.795);
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+
 .carousel {
   width: 90%;
   margin: 0 auto;
@@ -445,58 +669,7 @@ position: absolute;
   /* font-family: 'Zen Tokyo Zoo', cursive; */
 }
 
-/* .contact-form .form-field {
-  position: relative;
-  
-  margin: 62px 0;
-}
-.contact-form .input-text {
-    display: block;
-    width: 300%;
-    height: 39px;
-    border-radius: 10px;
-  border-width: 0 0 2px 0;
-  border-color: #5543ca;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-}
-.contact-form .input-text:focus {
-  outline: none;
-}
-.contact-form .input-text:focus + .label,
-.contact-form .input-text.not-empty + .label {
-  -webkit-transform: translateY(-39px);
-          transform: translateY(-39px);
-          color: white;
-}
-.contact-form .label {
-  position: absolute;
-  left: 20px;
-  top: 5px;
-  font-size: 2rem;
-  line-height: 26px;
-  font-weight: 400;
-  color: #5543ca;
-  cursor: text;
-  transition: -webkit-transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out, 
-  -webkit-transform .2s ease-in-out;
-}
-.f .submit-btn {
-  display: inline-block;
-  background-color: #000;
-   background-image: linear-gradient(125deg,#a72879,#064497);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 16px;
-  padding: 8px 16px;
-  border: none;
-  width:150px;
-  cursor: pointer;
-} */
+
 
 #message {
   /* height: 100px; */
